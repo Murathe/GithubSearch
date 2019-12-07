@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccontSearchComponent implements OnInit {
 
+  username: string;
   user: string[];
   repos: string[];
   constructor() { }
