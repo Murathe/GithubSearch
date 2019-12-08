@@ -1,4 +1,4 @@
-<div class="col-md-3">
+<div class="col-md-4">
   <div class="title">
     <h2>FIND THE GITHUB ME</h2>
   </div>
@@ -10,18 +10,34 @@
     </form>
   </div>
 </div>
-<div class="col-md-3"><!--avatar + followers + following + no.of repositories-->
+<div class="col-md-4"><!--avatar + followers + following + no.of repositories + username + date-->
   <img src="{{ user.avatar_url }}">
-  <p>
-    <span>Followers{{user.followers}}</span>
-    <span>Following{{user.following}}</span>
-  </p>
-</div>
-<div class="col-md-3"><!--list of repositories + forks + -->
-  <div class="items_list">
+  <div>
     <ul>
+      <li>Followers{{user.followers}}</li>
+      <li>Following{{user.following}}</li>
       <li>{{user.login}}</li>
       <li>{{user.created_at}}</li>
     </ul>
   </div>
 </div>
+<div class="col-md-4">
+  <h2>Repositories</h2>
+  <div *ngFor="let repo of repositories">
+    <p><a href="{{repo.html_url}}" target="_blank">{{repo.name}}</a></p>
+    <p>{{repo.description}}</p>
+    <p>Forks {{repo.forks}}</p>
+    <hr>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
