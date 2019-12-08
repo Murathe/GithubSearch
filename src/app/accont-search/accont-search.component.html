@@ -1,3 +1,12 @@
-<p>
-  accont-search works!
-</p>
+<div class="col-md-3">
+  <div class="title">
+    <h2>FIND THE GITHUB ME</h2>
+  </div>
+  <div class="search_box">
+    <form>
+      <div class="form-group">
+        <input type="text" class="form-control" name="username" placeholder="eneter github username" [(ngModel)]="username" required (keyup)="searchUser()">
+      </div>
+    </form>
+  </div>
+</div>
