@@ -1,5 +1,9 @@
+*{
+    background: violet;
+}
+
 .title-box{
-    padding-top: 100px;
+    padding-top: 10px;
 }
 
 .profile{
@@ -9,4 +13,8 @@
 h2{
     font-family: 'Lobster', cursive;
     font-size: 50px;
+}
+
+.full{
+    padding: 50px;
 }
