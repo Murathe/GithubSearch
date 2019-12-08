@@ -12,7 +12,16 @@
 </div>
 <div class="col-md-3"><!--avatar + followers + following + no.of repositories-->
   <img src="{{ user.avatar_url }}">
+  <p>
+    <span>Followers{{user.followers}}</span>
+    <span>Following{{user.following}}</span>
+  </p>
 </div>
 <div class="col-md-3"><!--list of repositories + forks + -->
-
+  <div class="items_list">
+    <ul>
+      <li>{{user.login}}</li>
+      <li>{{user.created_at}}</li>
+    </ul>
+  </div>
 </div>
