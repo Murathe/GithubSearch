@@ -17,14 +17,22 @@ export class AccontSearchComponent implements OnInit {
       console.log(user);
       this.user = user;
     });
-    this.githubsearchService.findRepos().subscribe(repo =>{
-      console.log(repo);
-      this.repos = repo;
+    this.githubsearchService.findRepos().subscribe(repos =>{
+      console.log(repos);
+      this.repos = repos;
     });
   }
 
   searchUser(){
     this.githubsearchService.replaceUser(this.username);
+
+    this.githubsearchService.findUser().subscribe(user => {
+      this.user = user;
+    });
+    this.githubsearchService.findRepos().subscribe(repos =>{
+      this.repos = repos;
+    })
+
   }
 
   ngOnInit() {
