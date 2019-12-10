@@ -1,3 +1,17 @@
+## Project
+Github Search Application
+
+## Author
+Murathe Isaac
+
+
+
+## Technologies Used
+- Angular
+- Bootstrap
+
+
+
 # GithubSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.

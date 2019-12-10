@@ -1,14 +1,31 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 
-
 <div class="container">
+  <div class="row">
+    <div class="title">
+      
+    </div>
+    <div class="search-box">
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" name="username" placeholder="enter username" >
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="content">
+
+  </div>
+</div>
+
+<!-- <div class="container">
   <div class="row title-box">
     <div class="title text-center col-md-6">
       <h2>FIND THE GITHUB ME</h2>
     </div>
     <hr>
-    <div class="col-md-2 search_box">
+    <div class="col-md-3 search_box">
       <form>
         <div class="form-group">
           <input type="text" class="form-control" name="username" placeholder="username" [(ngModel)]="username" required (keyup)="searchUser()">
@@ -17,37 +34,7 @@
     </div>
   </div>
 </div>
-<hr>
-<div class="container">
-  <div class="row">
-    <div class="col-md-4"><!--avatar + followers + following + username + date-->
-      <img class="profile" src="{{user.avatar_url}}">
-      <div>
-        <ul>
-          <p>Followers     {{  user.followers}}</p>
-          <p>Following  {{  user.following}}</p>
-          <p>{{user.login}}</p>
-          <p>{{user.created_at}}</p>
-        </ul>
-      </div>
-    </div>
-
-
-    <div class="col-md-8">
-      <h3>Repositories</h3>
-      <hr>
-      <div *ngFor="let repo of repos">
-        <p><a href="{{repo.html_url}}" target="_blank">{{repo.name}}</a></p>
-        <p>{{repo.description}}</p>
-        <p>Forks {{repo.forks}}</p>
-        <hr>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
+<hr> -->
 
 
 

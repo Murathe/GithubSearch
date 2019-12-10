@@ -6,11 +6,13 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AccontSearchComponent } from './accont-search/accont-search.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AccontSearchComponent
+    AccontSearchComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
