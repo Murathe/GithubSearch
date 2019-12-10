@@ -1,0 +1,51 @@
+*{
+    color: beige;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    color: coral;
+}
+
+
+::placeholder{
+    text-align: center;
+    color: coral;
+}
+
+.header{
+    margin-top: 5%;
+}
+
+input[type=text]{
+    border-radius: 50px;
+}
+
+img{
+    border-radius: 50%;
+    width: 70%;
+    height: 100%;
+}
+
+.list-unstyled{
+    margin-top: 50px;
+}
+
+.reposit{
+    margin-bottom: 5%;
+}
+
+.repos{
+    border: 2px yellow solid;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.repos:hover{
+    background: palevioletred;
+    color: lawngreen;
+}
+
+.repo-p{
+    margin-right: 50px;
+}
