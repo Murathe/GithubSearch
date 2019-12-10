@@ -9,7 +9,7 @@
     <div class="search-box">
       <form>
         <div class="form-group">
-          <input type="text" class="form-control" name="username" placeholder="enter username" >
+          <input type="text" class="form-control" name="username" placeholder="enter username" [(ngModel)]="username" (keyup)="searchUser()">
         </div>
       </form>
     </div>
