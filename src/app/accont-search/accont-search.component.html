@@ -33,7 +33,7 @@
     <div class="col-md-5 reposit">
       <h2 class="text-center">Repos</h2>
       <div class="repos" *ngFor="let repo of repos">
-        <h5 class="text-uppercase text-left">{{repo.name}}&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span class="badge badge-success float-right"><i class="fa fa-code-fork" aria-hidden="true"></i>{{repo.forks}}</span></h5>
+        <h5 class="text-uppercase text-left"><a href="{{repo.html_url}}" target="_blank">{{repo.name}}</a>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span class="badge badge-success float-right"><i class="fa fa-code-fork" aria-hidden="true"></i>{{repo.forks}}</span></h5>
         <p class="repo-p">{{repo.description}}</p>
       </div>
     </div>
