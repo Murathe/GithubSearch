@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubSearchService } from '../github-search.service';
-
+import { Account } from '../../account';
+ 
 @Component({
   selector: 'app-accont-search',
   templateUrl: './accont-search.component.html',
@@ -10,7 +11,7 @@ export class AccontSearchComponent implements OnInit {
 
   username: string;
   user: string[];
-  repos: string[];
+    repos: string[];
 
   constructor(private githubsearchService: GithubSearchService) { 
     this.githubsearchService.findUser().subscribe(user => {
