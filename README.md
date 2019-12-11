@@ -10,7 +10,7 @@ Murathe Isaac
 
 ### App screenshot
 
-![App screenshot](https://i.ibb.co/BtKzHnq/gutsearch.jpg)
+![App screenshot](https://i.ibb.co/1qZsrd5/Screenshot-from-2019-12-11-11-56-10.jpg)
 
 
 ### Live view 
